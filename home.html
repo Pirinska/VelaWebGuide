@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io-6/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io-6/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io-6/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>VELA Guide</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container">
+            <img src="images/logomark.png">
+            <a class="navbar-brand" href="#home.html">Vela Guide</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Gynae Surgeries ABC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cheklist.html">Checklists</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="diary.html">Daily Diary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Logout</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            </div>
+    </nav>
+
+    <div class="container">
+        <div class="my-5">
+            <!-- Other Content Goes Here -->
+            <div class="container mt-5">
+                <h1>Gynae Surgeries ABC</h1>
+                <br>
+                <!--Tabs-->
+                <div class="container mt-5">
+                    <ul class="nav nav-tabs rounded" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="surgeries-tab" data-bs-toggle="tab" href="#surgeries" role="tab" aria-controls="surgeries" aria-selected="true">Gynae Surgeries ABC</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="faq-tab" data-bs-toggle="tab" href="#faq" role="tab" aria-controls="faq" aria-selected="false">Frequently Asked Questions</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="education-tab" data-bs-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false">Patient Education</button>
+                        </li>
+                    </ul>
+                
+
+                    
+                    <div class="tab-content" id="myTabContent">
+
+                        <div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="faq-tab">
+                            <!-- Frequently Asked Questions Content Goes Here -->
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentOneB"> <!-- !!!! ALSO ADJUST CONTENT ID ADJUST !!!! -->
+                                    Question 1: What type of anesthesia will be used during the surgery?
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentOneB" class="surgery-content"> <!-- !!!! THE CONTENT ID MUST BE DIFFERENT FOR EVERY SECTION !!!! -->
+                                    <p>The type of anesthesia used depends on the specific procedure and the patient's health. It could be general anesthesia, where you're unconscious, or regional anesthesia, where only a part of your body is numbed. The anesthesiologist will discuss the best option for you based on your surgical procedure and medical history.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentTwoB"> <!-- !!!! ALSO ADJUST CONTENT ID ADJUST !!!! -->
+                                    Question 2: How long will recovery take post-surgery?
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentTwoB" class="surgery-content"> <!-- !!!! THE CONTENT ID MUST BE DIFFERENT FOR EVERY SECTION !!!! -->
+                                    <p>Recovery times vary based on the type of surgery and the individual. Some patients may recover in a few weeks, while others might take several months. Your doctor will give you a more personalized timeline based on your specific procedure and overall health.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentThreeB"> <!-- !!!! ALSO ADJUST CONTENT ID ADJUST !!!! -->
+                                    Question 3: How should I care for my wound post-surgery?
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentThreeB" class="surgery-content"> <!-- !!!! THE CONTENT ID MUST BE DIFFERENT FOR EVERY SECTION !!!! -->
+                                    <p>Your medical team will provide detailed instructions on wound care, including how to clean and dress the surgical site. It's essential to follow these instructions carefully to prevent infection and promote healing.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentFourB"> <!-- !!!! ALSO ADJUST CONTENT ID ADJUST !!!! -->
+                                    Question 4: When can I return to work after surgery?
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentFourB" class="surgery-content"> <!-- !!!! THE CONTENT ID MUST BE DIFFERENT FOR EVERY SECTION !!!! -->
+                                    <p>Some degree of pain or discomfort is common after surgery, but it can usually be managed with pain medications and other strategies that your medical team will discuss with you.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentFiveB"> <!-- !!!! ALSO ADJUST CONTENT ID ADJUST !!!! -->
+                                    Question 5: What kind of assistance will I need at home?
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentFiveB" class="surgery-content"> <!-- !!!! THE CONTENT ID MUST BE DIFFERENT FOR EVERY SECTION !!!! -->
+                                    <p> Depending on your surgery, you might need help with daily activities such as cooking, cleaning, and personal care. It's advisable to arrange for a friend or family member to assist you during your initial recovery period.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentSixB"> <!-- !!!! ALSO ADJUST CONTENT ID ADJUST !!!! -->
+                                    Question 6: What should I eat after surgery?
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentSixB" class="surgery-content"> <!-- !!!! THE CONTENT ID MUST BE DIFFERENT FOR EVERY SECTION !!!! -->
+                                    <p>Proper nutrition is crucial for healing. Your doctor or a nutritionist will provide dietary recommendations based on your specific surgery and personal health needs, including any foods or beverages you should avoid.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+                            <!-- Patient Education Content Goes Here -->
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentOneC"> <!-- !!!! ALSO ADJUST CONTENT ID ADJUST !!!! -->
+                                    Professional Medical Associations
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentOneC" class="surgery-content"> <!-- !!!! THE CONTENT ID MUST BE DIFFERENT FOR EVERY SECTION !!!! -->
+                                    <p>The American College of Obstetricians and Gynecologists (ACOG): Patient education pamphlets and videos on a wide range of women's health issues, including surgeries.
+                                        The Royal College of Obstetricians and Gynaecologists (RCOG): Information sheets, FAQs, and recovery advice for various gynecological procedures.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentTwoC"> <!-- !!!! ALSO ADJUST CONTENT ID ADJUST !!!! -->
+                                    Healthcare Institutions
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentTwoC" class="surgery-content"> <!-- !!!! THE CONTENT ID MUST BE DIFFERENT FOR EVERY SECTION !!!! -->
+                                    <p>Mayo Clinic: Articles and slideshows on what to expect from gynecological surgeries, risks, and recovery tips.
+                                        Cleveland Clinic: Patient guides and educational videos detailing surgical procedures and aftercare.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentThreeC"> <!-- !!!! ALSO ADJUST CONTENT ID ADJUST !!!! -->
+                                    Professional Medical Associations
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentThreeC" class="surgery-content"> <!-- !!!! THE CONTENT ID MUST BE DIFFERENT FOR EVERY SECTION !!!! -->
+                                    <p>The American College of Obstetricians and Gynecologists (ACOG): Patient education pamphlets and videos on a wide range of women's health issues, including surgeries.
+                                        The Royal College of Obstetricians and Gynaecologists (RCOG): Information sheets, FAQs, and recovery advice for various gynecological procedures.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentFourC"> <!-- !!!! ALSO ADJUST CONTENT ID ADJUST !!!! -->
+                                    Government Health Websites
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentFourC" class="surgery-content"> <!-- !!!! THE CONTENT ID MUST BE DIFFERENT FOR EVERY SECTION !!!! -->
+                                    <p>TMedlinePlus: A resource from the U.S. National Library of Medicine which offers comprehensive information on different types of surgeries, including gynecological operations.
+                                        NHS UK: Provides patient guides and recovery advice specific to gynecological surgeries performed in NHS hospitals.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentFiveC"> <!-- !!!! ALSO ADJUST CONTENT ID ADJUST !!!! -->
+                                    Educational Videos
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentFiveC" class="surgery-content"> <!-- !!!! THE CONTENT ID MUST BE DIFFERENT FOR EVERY SECTION !!!! -->
+                                    <p>Animated explanations of gynecological surgeries, which can be found on platforms like YouTube or health-specific video resources such as Healthline.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentSixC"> <!-- !!!! ALSO ADJUST CONTENT ID ADJUST !!!! -->
+                                    Peer-Reviewed Journals
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentSixC" class="surgery-content"> <!-- !!!! THE CONTENT ID MUST BE DIFFERENT FOR EVERY SECTION !!!! -->
+                                    <p>Articles from journals like "Obstetrics & Gynecology" or "The Journal of Minimally Invasive Gynecology" that discuss the latest research and advancements in surgical techniques.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="tab-pane fade show active" id="surgeries" role="tabpanel" aria-labelledby="surgeries-tab">
+                            <!-- Gynae Surgeries ABC Content Goes Here -->
+                            
+                        <div id="surgeryAccordion">
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentOne">
+                                    Hysterectomy
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentOne" class="surgery-content">
+                                    <p>A hysterectomy is a common surgical procedure focused on women's health, involving the removal of the uterus. This surgery may be recommended for various reasons, such as persistent pelvic pain or cancer. The surgery helps alleviate symptoms and improve the quality of life, allowing women to lead a healthier and more comfortable existence post-surgery.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                            <!-- repeat -->
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentTwo">
+                                    Oophorectomy
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentTwo" class="surgery-content">
+                                    <p>An oophorectomy involves the surgical removal of one or both ovaries. It's often performed to prevent or treat various health conditions, such as ovarian cancer or endometriosis. This procedure can be a significant step towards recovery and relief for many women, aiding in the reduction of discomfort and the risk of certain health issues.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                            <!-- repeat -->
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentThree">
+                                    Salpingectomy
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentThree" class="surgery-content">
+                                    <p>In a salpingectomy, one or both fallopian tubes are removed. This procedure can be beneficial for reducing the risk of ovarian cancer or as a treatment for an ectopic pregnancy. The surgery aims to enhance a woman’s wellbeing, mitigating pain and other symptoms associated with gynecological health.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                            <!-- repeat -->
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentFour">
+                                    Cystectomy
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentFour" class="surgery-content">
+                                    <p> Cystectomy involves the removal of cysts from the ovaries. Women undergoing this procedure often experience relief from discomfort and a reduction in symptoms like bloating or pelvic pain. This surgery can be instrumental in improving a woman's reproductive health and overall quality of life.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                            <!-- repeat -->
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentFive">
+                                    Laparoscopy
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentFive" class="surgery-content">
+                                    <p> Laparoscopy is a minimally invasive surgery used to diagnose or treat various gynecological conditions, such as endometriosis or fibroids. It involves making small incisions in the abdomen, offering shorter recovery times and reduced post-operative discomfort. This procedure provides a less invasive option for women, promoting quicker healing and a smoother post-surgery experience.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                            <!-- repeat -->
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentSix">
+                                    Cervical cerclage
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentSix" class="surgery-content">
+                                    <p> Cervical cerclage is a surgical intervention used to treat cervical incompetence or insufficiency, a condition where the cervix starts to widen and thin before the pregnancy has reached term, raising the risk of a miscarriage or premature birth. During this procedure, stitches are placed in the cervix to keep it closed, providing additional support to the uterus. It's a vital measure taken to improve the chances of carrying a pregnancy to term, helping many women avoid the complications associated with premature birth.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                            <!-- repeat -->
+                            <div class="surgery-item">
+                                <h5 class="surgery-header" data-target="#contentSeven">
+                                    Endometrial ablation
+                                    <span class="arrow-icon">&#x25BC;</span>
+                                </h5>
+                                <div id="contentSeven" class="surgery-content">
+                                    <p>Endometrial ablation is a procedure aimed at reducing menstrual flow, and in some cases, it stops the flow entirely. It involves the removal or destruction of the lining of the uterus (endometrium) to address issues such as heavy menstrual bleeding. This surgery offers relief to women who suffer from heavy or prolonged periods, improving their quality of life and comfort, but it's generally considered only after other treatment options have been explored and proven unsuccessful.</p>
+                                    <!-- Add More Content Here -->
+                                </div>
+                            </div>
+                            </div>
+
+                            
+
+                    </div>
+                </div>
+                
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                <br>
+
+                    <div class="container">
+                        <a href="https://www.figma.com/proto/4qg7BE2PaKOkKTdnzwKRcF/Vela---Usability-testing?page-id=0%3A1&type=design&node-id=0-1660&viewport=642%2C484%2C0.12&t=wulfuVB5odklOK6b-1&scaling=scale-down&starting-point-node-id=0%3A1660&mode=design" target="_blank">
+                    <img class="img-fluid" src="images/banner.png">
+                </a>
+                </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+    <footer class="fixed-footer">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <p>&copy; 2023 VELA Guide</p>
+                <nav>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
