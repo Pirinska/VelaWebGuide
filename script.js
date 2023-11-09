@@ -1,9 +1,9 @@
 //arrow interactions
-$(document).ready(function(){
-    $('.surgery-header').click(function(){
+$(document).ready(function () {
+    $('.surgery-header').click(function () {
         var targetContent = $($(this).attr('data-target'));
         var arrowIcon = $(this).find('.arrow-icon');
-        
+
         if (targetContent.css('display') === 'none') {
             targetContent.show();
             arrowIcon.addClass('rotated');
@@ -14,10 +14,10 @@ $(document).ready(function(){
     });
 });
 //checklist interaction
-$(document).ready(function(){
-    $('#addNoteBtn').click(function(){
+$(document).ready(function () {
+    $('#addNoteBtn').click(function () {
         var noteText = $('#journalInput').val();
-        if(noteText) {
+        if (noteText) {
             var noteHtml = `
                 <div class="note">
                     <p>${noteText}</p>
@@ -32,8 +32,8 @@ $(document).ready(function(){
 });
 
 //homepage tabs interaction
-$(document).ready(function(){
-    $('.nav-tabs .nav-link').on('click', function() {
+$(document).ready(function () {
+    $('.nav-tabs .nav-link').on('click', function () {
         $('.nav-tabs .nav-link').removeClass('active');
         $(this).addClass('active');
         $('.tab-pane').removeClass('show active');

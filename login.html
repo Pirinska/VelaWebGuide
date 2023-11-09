@@ -32,13 +32,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <form class="d-flex justify-content-between">
-                            
-                                <li class="nav-item">
-                                    <a class="nav-link" href="login.html">Login</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="index.html">Register</a>
-                                </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Register</a>
+                            </li>
 
                         </form>
                     </ul>
@@ -55,7 +55,7 @@
                         and diary journal.</h5>
                 </div>
             </div>
-
+            <!--Input field for logging in the app-->
             <div class="container my-5">
                 <form>
                     <div class="row justify-content-center">
@@ -107,14 +107,13 @@
 
     <script src="script.js"></script>
     <script type="module">
-        // Import the functions you need from the SDKs you need
+        // Importing the functions you need from the SDKs 
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
         import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";
         import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
 
-        // Your web app's Firebase configuration
+
+        // Web app's Firebase configuration
         const firebaseConfig = {
             apiKey: "AIzaSyCtn1hN5KnNH89ZHBJm4KOSuoYPxYXPvD0",
             authDomain: "velawebguide-b761d.firebaseapp.com",
@@ -125,7 +124,7 @@
             appId: "1:243503297514:web:85454bfa38656a5ce43893"
         };
 
-        // Initialize Firebase
+        // Initialise Firebase
         const app = initializeApp(firebaseConfig);
         const database = getDatabase(app);
         const auth = getAuth();
@@ -138,13 +137,13 @@
             signInWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
                     // Signed in 
-                
+
                     const user = userCredential.user;
                     const dt = new Date();
                     window.location.href = 'home.html';
                     update(ref(database, 'users/' + user.uid), {
                         last_login: dt,
-                        
+
                     })
                     alert('User logged in successfully!')
                     // ...
@@ -160,28 +159,27 @@
 
         const user = auth.currentUser;
         onAuthStateChanged(auth, (user) => {
-  if (user) {
-    // User is signed in, see docs for a list of available properties
-    // https://firebase.google.com/docs/reference/js/auth.user
-    const uid = user.uid;
-    // ...
-  } else {
-    // User is signed out
-    // ...
-  }
-});
+            if (user) {
+                // User is signed in, see docs for a list of available properties
+                const uid = user.uid;
+                // ...
+            } else {
+                // User is signed out
+                // ...
+            }
+        });
 
-logout.addEventListener('click', (e)=> {
-    signOut(auth).then(() => {
-  // Sign-out successful.
-  alert('User signed out successfully!')
-}).catch((error) => {
-  // An error happened.
-  const errorCode = error.code;
-                    const errorMessage = error.message;
-                    alert(errorMessage);
-});
-});
+        logout.addEventListener('click', (e) => {
+            signOut(auth).then(() => {
+                // Sign-out successful.
+                alert('User signed out successfully!')
+            }).catch((error) => {
+                // An error happened.
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                alert(errorMessage);
+            });
+        });
 
 
     </script>
